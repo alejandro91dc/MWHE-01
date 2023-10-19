@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>DWA - Ejercicio 1</title>
+        <meta charset="utf-8" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web&display=swap"
+            rel="stylesheet"
+        />
+        <script
+        src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous" ></script>
+        <script src="js/script.js" ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Diseño Web Avanzado</h1>
+            <p>Ejercicio 1. 17/10/2023</p>
+
+            <nav id="menu">
+                <i class="fas fa-bars" onclick="menu()"></i>
+                <ul>
+                    <li>
+                        <a href="#resume" onclick="">Enunciado</a>
+                    </li>
+                    <li>
+                        <a href="#instructions" onclick=""> Entrega</a>
+                    </li>
+                    <li>
+                        <a href="#eval" onclick="">Evaluación</a>
+                    </li>
+                    <li>
+                        <a href="#webgraphy" onclick=""> Bibliografía</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="">Contacto</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick=""></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="resume">
+            <h2>Enunciado</h2>
+            <p>
+                En este primer ejercicio de <em>Diseño web avanzado</em> el
+                alumno deberá completar las funciones JavaScript del archivo
+                <strong>script.js</strong> del presente proyecto, de forma que:
+            </p>
+            <ul>
+                <li>
+                    La función <strong>changeOpacity()</strong> cambiará la
+                    opacidad del elemento &lt;nav&gt; que dispone del id="menu",
+                    de forma que cuando la página esté posicionada al inicio se
+                    verá totalmente transparente y, de forma gradual, pasará a
+                    totalmente opaco cuando alcance la posición superior.
+                </li>
+                <li>
+                    El alumno deberá hacer la llamada a
+                    <strong>changeOpacity()</strong> desde el propio archivo
+                    JavaScript a través de un evento y una
+                    <em>función anónima</em>.
+                </li>
+                <li>
+                    La función <strong>menu()</strong> abra el menú hamburguesa
+                    si está cerrado y lo cierre cuando esté abierto, por lo que
+                    se deberá comprobar el estado antes de realizar ninguna
+                    acción. Esto solo será posible cuando estemos en pantalla
+                    pequeña que es cuando se presenta el menú hamburguesa.
+                </li>
+                <li>
+                    La función <strong>closeMenu()</strong> cerrará el menú sin
+                    hacer comprobaciones una vez se seleccione una de las
+                    opciones del mismo.
+                </li>
+                <li>
+                    La función <strong>openMenu()</strong> abrirá el menú sin
+                    hacer comprobaciones. Esta función se llamará desde menu().
+                </li>
+                <li>
+                    La función <strong>changeImage()</strong> cambiará la imagen
+                    del enunciado, de forma que, al pasar por encima, presentará
+                    la imagen <em>image_hover.jpg</em> y, al quitar el ratón,
+                    restaurará a la imagen <em>image_normal.jpg</em>.
+                </li>
+                <li>
+                    La función <strong>checkPasswords()</strong> comprobará que
+                    las contraseñas introducidas en los input son identicas y,
+                    si no lo son, mostrará un mensaje de error en el párrafo con
+                    la clase <em>error_msg</em>. Esta función se llamará desde
+                    el evento <em>onsubmit</em> del formulario.
+                </li>
+            </ul>
+            <p>
+                Este ejercicio se realizará de forma
+                <strong>individual</strong>.
+            </p>
+            <div class="cont">
+                <h3>Imagen a cambiar cuando se pasa el ratón sobre ella:</h3>
+                <figure onmouseover="changeImage()" onmouseout="changeImage()">
+                    <img
+                        src="img/image_normal.jpg"
+                        alt="Todos contra el cambio climático"
+                    />
+                </figure>
+                <div class="signin-cont">
+                    <p>¡Regístrate como nuevo usuario!</p>
+                    <form onsubmit="return checkPasswords()">
+                        <label for="nl_email_input">Email:</label>
+                        <input
+                            type="email"
+                            name="nl-email"
+                            id="nl_email_input"
+                        />
+
+                        <label for="user_pass">Contraseña:</label>
+                        <input
+                            type="password"
+                            name="user_pass"
+                            id="user_pass"
+                        />
+
+                        <label for="user_pass_r">Repite la contraseña:</label>
+                        <input
+                            type="password"
+                            name="user_pass_r"
+                            id="user_pass_r"
+                        />
+
+                        <p class="error_msg hidden">
+                            Las contraseñas no coinciden 😞
+                        </p>
+
+                        <input
+                            type="submit"
+                            id="nl_submit"
+                            value="¡Registrar!"
+                        />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructions">
+            <h2>Entrega</h2>
+            <p>
+                El alumno deberá subir al campus virtual, en el control
+                indicado,
+                <strong>solo el archivo JavaScript completado</strong>.
+            </p>
+            <p>
+                La fecha máxima de entrega será el
+                <strong>17/10/2023 a las 23:59 h</strong>. No se aceptarán
+                entregas fuera de plazo o que no estén subidas al campus
+                virtual.
+            </p>
+            <p>
+                La no entrega o suspenso del ejercicio no obliga al alumno a
+                presentarse en convocatoria extraordinaria.
+            </p>
+        </section>
+        <section id="eval">
+            <h2>Evaluación</h2>
+            <p>La nota del ejercicio podrá ser alguna de las siguientes:</p>
+            <ul>
+                <li>10 puntos: sin fallos.</li>
+                <li>8 puntos: con fallos leves.</li>
+                <li>4 puntos: con fallos graves.</li>
+                <li>0 puntos: con fallos muy graves, plagio o no entregado.</li>
+            </ul>
+            <p>
+                Las entregas que sean idénticas al código original (sin
+                modificaciones) serán consideradas como ejercicio no entregado.
+            </p>
+        </section>
+        <section id="webgraphy">
+            <h2>Bibliografía</h2>
+            <ul>
+                <li>
+                    Imagen de
+                    <a
+                        href="https://www.freepik.es/foto-gratis/manos-sosteniendo-suelo-planta-crecimiento-espacio-copia_12060287.htm"
+                        >Freepik</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.freepik.es/foto-gratis/trozo-hielo-muy-grande-hermoso-al-amanecer-invierno_11599777.htm#query=cambio%20climatico&position=10&from_view=search&track=sph"
+                        >Imagen de tawatchai07</a
+                    >
+                    en Freepik
+                </li>
+                <li>
+                    <a
+                        href="https://www.freepik.es/foto-gratis/paisaje-marino-panoramico-peces-tropicales_1162210.htm#query=cambio%20climatico&position=4&from_view=search&track=sph#position=4&query=cambio%20climatico"
+                        >Imagen de LuqueStock</a
+                    >
+                    en Freepik
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>
+                <a href="mailto:adrian.cano@esne.es">Adrián Cano</a>,
+                <a href="mailto:carolina.garcia@esne.es">Carolina García</a>.
+            </p>
+        </section>
+    </body>
+</html>
