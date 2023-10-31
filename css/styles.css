@@ -1,0 +1,41 @@
+:root {
+    --color-primario: rgba(30,43,63,1);
+    --color-secundario: rgba(43,58,81,1);
+  }
+
+.navbar-transparent {
+    backdrop-filter: blur(10px);
+    /* position: absolute !important; */
+    z-index: 2;
+    width: 100%;
+
+}
+
+.navbar-transparent .container-fluid {
+    /* background-color: rgba(0, 0, 0, 0.5); Fondo semi-transparente para legibilidad */
+}
+
+
+header {
+    background-size: cover;
+    background-image: linear-gradient(90deg, var(--color-primario) 45%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
+    width: auto;
+    height: 100vh;
+    /* position:absolute; */
+    z-index: 1;
+}
+#main-text {
+    height: 100%;
+    margin: 15%;
+    width: 31%;
+    color: #fff;
+}
+
+#main-text h1 {
+    font-size: 4.5em;
+}
+
+#about {
+    height: 700px;
+    background-color: var(--color-secundario);
+}
