@@ -39,3 +39,12 @@ header {
     height: 700px;
     background-color: var(--color-secundario);
 }
+
+.row {
+    height: 100%;
+}
+
+#about .row .col-md-4 {
+    background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/about.png);
+    background-size: cover;
+}
