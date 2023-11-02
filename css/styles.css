@@ -48,3 +48,17 @@ header {
     background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/about.png);
     background-size: cover;
 }
+
+@media (max-width: 400px) {
+
+#main-text {
+    height: 100%;
+    margin: 10%;
+    width: 80%;
+    color: #fff;
+}
+    #main-text h1 {
+        font-size: 2em;
+    }    
+
+}
