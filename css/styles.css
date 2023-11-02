@@ -3,6 +3,11 @@
     --color-secundario: rgba(43,58,81,1);
   }
 
+* {
+    color: #fff;
+}
+
+
 .navbar-transparent {
     backdrop-filter: blur(10px);
     /* position: absolute !important; */
@@ -40,9 +45,6 @@ header {
     background-color: var(--color-secundario);
 }
 
-.row {
-    height: 100%;
-}
 
 #about .row .col-md-4 {
     background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/about.png);
