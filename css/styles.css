@@ -60,8 +60,17 @@ body, section{
     background-size: cover;
 }
 
+.table td, .table th{
+    border-top: none!important;
+}
+
+.fa {
+    color: rgb(255, 213, 0);
+}
+
 .skill-content {
     height: 70vh;
+    margin-bottom: 10em;
 }
 
 
