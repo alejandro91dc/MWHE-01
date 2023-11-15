@@ -50,6 +50,7 @@ header {
 }
 
 .grid {
+ 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -92,3 +93,4 @@ header {
     grid-column: 4;
     grid-row: 3/4;
 }
+
