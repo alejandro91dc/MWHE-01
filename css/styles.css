@@ -41,11 +41,11 @@ body, section{
     width: 31%;
  
 }
-
+/*
 #main-text h1 {
     font-size: 4.5em;
 }
-
+*/
 #about, #hire {
     height: 700px;
     background-color: var(--color-secundario);
@@ -106,48 +106,3 @@ body, section{
     
 }
 
-/* formulario */
-.form-area{
-    padding-top: 7%;
-}
-.row.single-form{
-    box-shadow: 0 2px 20px -5px;
-}
-
-.left{
-    background: var(--color-secundario);
-    padding: 20px 98px;
-}
-
-.left h2{
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-}
-.left h2 span{
-    font-weight: 100;
-}
-.right{
-    padding: 70px 100px;
-    position: relative;
-}
-.right i{
-    position: absolute;
-    font-size: 80px;
-    left: -27px;
-    top: 40%;
-}
-.form-control{
-    border: 2px solid #2c3a50c2;
-}
-.right button{
-    border: none;
-    border-radius: 0;
-    background: var(--color-secundario);
-    width: 180px;
-    padding: 15px 0;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-}

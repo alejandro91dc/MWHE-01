@@ -1,18 +1,21 @@
+
 /* formulario */
 .form-area{
     padding-top: 7%;
 }
 .row.single-form{
-    box-shadow: 0 2px 20px -5px;
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 5);
+    background: #000;
 }
 
 .left{
-    background: var(--color-secundario);
-    padding: 20px 98px;
+    background: var(--color-primario);
+    padding: 200px 98px;
 }
 
 .left h2{
-    font-family: sans-serif;
+    font-family: poppins;
+    color: #fff;
     font-weight: 400;
     font-size: 48px;
 }
@@ -23,23 +26,21 @@
     padding: 70px 100px;
     position: relative;
 }
-.right i{
-    position: absolute;
-    font-size: 80px;
-    left: -27px;
-    top: 40%;
-}
+
 .form-control{
     border: 2px solid #2c3a50c2;
 }
 .right button{
     border: none;
     border-radius: 0;
-    background: var(--color-secundario);
+    background: var(--color-primario);
     width: 180px;
     padding: 15px 0;
     display: inline-block;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
+}
+.right button:hover{
+    background: #000;
 }
