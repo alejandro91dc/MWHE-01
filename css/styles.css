@@ -39,7 +39,7 @@
 
 #mainHeader {
     background-size: cover;
-    background-image: linear-gradient(90deg, var(--color-primario) 45%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
+    background-image: linear-gradient(90deg, var(--color-primario) 10%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
     width: auto;
     height: 100vh;
     /* position:absolute; */
@@ -139,6 +139,12 @@ body, section{
 tbody, td, tfoot, th, thead, tr  {
     border-style: none;
 
+}
+
+footer {
+    background-color: var(--color-secundario);
+    height: 10vh;
+    width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
