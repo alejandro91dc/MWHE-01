@@ -1,31 +1,23 @@
+:root {
+    --color-primario: rgba(30,43,63,1);
+    --color-secundario: rgba(43,58,81,1);
+  }
 
 /* formulario */
-.h1{
-    font-family: poppins;
-}
 .form-area{
     padding-top: 7%;
 }
-.row.single-form{
-    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 5);
-    background: #000;
-}
-
-.left{
-    background: var(--color-primario);
-align-items: center;}
 
 .left h2{
-    font-family: poppins;
+    font-family: Poppins;
     color: #fff;
-    font-weight: 400;
-    font-size: 4em;
+    font-weight: 100;
+    font-size: 48px;
 }
 .left h2 span{
-    font-weight: 100;
+    font-weight: 500;
 }
 .right{
-align-items: center;
 }
 
 .form-control{
@@ -38,10 +30,18 @@ align-items: center;
     width: 180px;
     padding: 15px 0;
     display: inline-block;
-    font-size: 1em;
+    font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
 }
-.right button:hover{
-    background: #000;
+
+
+#contactText {
+    background-color: var(--color-secundario);
+}
+
+#endContact {
+    background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/hire.png);
+    background-size: cover;
+    height: 40vh;
 }
