@@ -1,46 +1,46 @@
+h1 {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+form {
+    background-color: var(--color-secundario);
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 40px auto;
+    text-align: left;
+  }
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+  }
 
-/* formulario */
-.form-area{
-    padding-top: 7%;
-}
-.row.single-form{
-    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 5);
-    background: #000;
-}
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    color: #444;
+  }
 
-.left{
-    background: var(--color-primario);
-    padding: 200px 98px;
-}
+  textarea {
+    resize: vertical;
+  }
 
-.left h2{
-    font-family: poppins;
-    color: #fff;
-    font-weight: 400;
-    font-size: 48px;
-}
-.left h2 span{
-    font-weight: 100;
-}
-.right{
-    padding: 70px 100px;
-    position: relative;
-}
-
-.form-control{
-    border: 2px solid #2c3a50c2;
-}
-.right button{
-    border: none;
-    border-radius: 0;
-    background: var(--color-primario);
-    width: 180px;
-    padding: 15px 0;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
+  button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
     cursor: pointer;
-}
-.right button:hover{
-    background: #000;
-}
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
