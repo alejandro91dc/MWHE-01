@@ -124,3 +124,9 @@ body, section{
     
 }
 
+@media (max-width: 900px) {
+.d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
