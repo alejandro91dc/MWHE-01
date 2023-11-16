@@ -5,7 +5,25 @@
 :root {
     --color-primario: rgba(30,43,63,1);
     --color-secundario: rgba(43,58,81,1);
+    --bs-navbar-active-color: pink;
   }
+
+ 
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #0d6efd;
+}
+
 
 .navbar-transparent {
     backdrop-filter: blur(10px);
@@ -20,7 +38,7 @@
 }
 
 
-header {
+#mainHeader {
     background-size: cover;
     background-image: linear-gradient(90deg, var(--color-primario) 45%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
     width: auto;
