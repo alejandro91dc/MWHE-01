@@ -7,7 +7,22 @@
     --color-secundario: rgba(43,58,81,1);
   }
 
+  .navbar-brand {
+    position: relative;
+  }
  
+.navbar-brand img{
+    width: 60px;
+    position: absolute;
+    top: -15px;
+}
+
+.navbar-brand img:hover {
+    width: 170px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(89%) contrast(119%);
+    transition: 0.5s ease;
+}
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
