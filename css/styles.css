@@ -5,7 +5,6 @@
 :root {
     --color-primario: rgba(30,43,63,1);
     --color-secundario: rgba(43,58,81,1);
-    --bs-navbar-active-color: pink;
   }
 
  
@@ -29,7 +28,7 @@
     backdrop-filter: blur(10px);
     /* position: absolute !important; */
     z-index: 2;
-    width: 100%;
+    margin: 0 1% 0 1%;
 
 }
 
@@ -47,25 +46,29 @@
     z-index: 1;
 }
 
+#mainTitle {
+    font-size: 7em;
+}
+
 body, section{
     background-color: var(--color-primario)!important;
 }
 
 
-
+/*
 #main-text {
     height: 100%;
     margin: 15%;
     width: 31%;
  
 }
-/*
+
 #main-text h1 {
     font-size: 4.5em;
 }
 */
-#about, #hire {
-    height: 700px;
+ #hire {
+    
     background-color: var(--color-secundario);
 }
 
@@ -73,9 +76,10 @@ body, section{
     height: 100%;
 }
 
-#about .row .col-md-4 {
+#about > .row > .col-md-4 {
     background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/about.png);
     background-size: cover;
+    height: 60vh;
 }
 
 .table td, .table th{
@@ -89,6 +93,7 @@ body, section{
 .skill-content {
     height: 70vh;
     margin-bottom: 10em;
+    position: relative;
 }
 
 
@@ -101,7 +106,7 @@ body, section{
 .transparent {
     background-color: #2c3a50c2;
     backdrop-filter: blur(5px);
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 4em;
     position: absolute;
@@ -109,24 +114,50 @@ body, section{
 }
 
 .t-a{
-    top: 75%;
-    left: 45%;
+    bottom: -10%;
+    right: -10%;
 }
 
 .t-b {
-    top: 75%;
-    left: -5%;;
-}
+    bottom: -10%;
+    left: -10%;;
+} 
+
 
 #hire .col-md-8 {
     background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/hire.png);
     background-size: cover;
+    height: 40vh;
     
 }
 
-@media (max-width: 900px) {
-.d-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #fff;
 }
+
+tbody, td, tfoot, th, thead, tr  {
+    border-style: none;
+
 }
+
+@media only screen and (max-width: 767px) {
+   .skill-content {
+    height: auto;
+    margin-bottom: 14em;
+   }
+    .transparent {
+    position: relative;
+    font-size: 0.7em;
+   }
+   .t-a {
+    bottom: -80%;
+    right: -10%;
+}
+
+.t-b {
+    bottom: -80%;
+    left: -10%;;
+} 
+    /* Agrega estilos adicionales para pantallas más pequeñas aquí */
+  }
