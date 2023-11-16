@@ -41,11 +41,11 @@ body, section{
     width: 31%;
  
 }
-
+/*
 #main-text h1 {
     font-size: 4.5em;
 }
-
+*/
 #about, #hire {
     height: 700px;
     background-color: var(--color-secundario);
