@@ -23,16 +23,14 @@
     transition: 0.5s ease;
 }
 
-/* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: rgba(255,255,255,.8);
 }
-/* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: #fff;
 }
-/* change the color of active or hovered links */
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #0d6efd;
@@ -41,23 +39,17 @@
 
 .navbar-transparent {
     backdrop-filter: blur(10px);
-    /* position: absolute !important; */
     z-index: 100;
     margin: 0 1% 0 1%;
 
 }
 
-.navbar-transparent .container-fluid {
-    /* background-color: rgba(0, 0, 0, 0.5); Fondo semi-transparente para legibilidad */
-}
-
 
 #mainHeader {
     background-size: cover;
-    background-image: linear-gradient(90deg, var(--color-primario) 10%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
+    background-image: linear-gradient(90deg, var(--color-primario) 0%, rgba(0,212,255,0) 100%), url("../img/gatito\ 1.png");
     width: auto;
     height: 100vh;
-    /* position:absolute; */
     z-index: 1;
 }
 
@@ -69,23 +61,6 @@ body, section{
     background-color: var(--color-primario)!important;
 }
 
-
-/*
-#main-text {
-    height: 100%;
-    margin: 15%;
-    width: 31%;
- 
-}
-
-#main-text h1 {
-    font-size: 4.5em;
-}
-*/
- #hire {
-    
-    background-color: var(--color-secundario);
-}
 
 .row {
     height: 100%;
@@ -138,11 +113,16 @@ body, section{
     left: -10%;;
 } 
 
+#hire {
+    height: 60vh;
+    background-color: var(--color-secundario);
+}
+
 
 #hire .col-md-8 {
     background-image: radial-gradient(circle, rgba(82,99,126,0) 0%, var(--color-primario) 84%), url(../img/hire.png);
     background-size: cover;
-    height: 40vh;
+   
     
 }
 
@@ -160,6 +140,16 @@ footer {
     background-color: var(--color-secundario);
     height: 10vh;
     width: 100%;
+    border-top: 1px solid;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
